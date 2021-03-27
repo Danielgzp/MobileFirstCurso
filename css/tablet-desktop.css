@@ -1,0 +1,20 @@
+.main-tables-container{
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+}
+.main-tables--slider{
+    justify-content: center;
+    overflow-x: unset;
+}
+.product-cards--container{
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.plans-container--slider{
+    justify-content: center;
+    overflow-x: unset;
+    /*para quitar el siled horizontal*/
+}

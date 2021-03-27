@@ -88,7 +88,7 @@ h1{
     display: block;
     margin-top: 35px;
     padding: 15px;
-    width: 229px;
+    width: 240px;
     height: 48px;
     background-color: var(--soft-white);
     /* Sombra*/
@@ -115,10 +115,10 @@ main{
 .main-section1{
     width: 100%;
     height: auto;
-    padding: 80px;
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+    
 }
 .exchange-container--title {
     width: 90%;
@@ -134,8 +134,6 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
 .main-section1 h2{
     margin-bottom: 30px;
@@ -151,6 +149,28 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables--slider{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 10px;
+}
+.main-tables--slider::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+.main-tables--slider::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
+.main-currency-table, .main-comission-table{
+    width: 70%;
+    max-width: 500px;
+    min-width: 230px;
+    height: 360px;
+    margin-left: 20px;
+    font-family: "Inter", sans-serif;
+}
 .main-tables-container span{
     display: inline-block;
     width: 13px;
@@ -158,21 +178,12 @@ main{
     margin-left: 10px;
     background-image: url('./assets/icons/trending-up.svg');
 }
-.main-currency-table, .main-comission-table{
-    width: 70%;
-    max-width: 500px;
-    min-width: 320px;
-    height: 360px;
-    margin: 0 auto;
-    font-family: "Inter", sans-serif;
-}
 .main-currency-table .currency-table--title{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
-    text-align: left;
 }
 .main-comission-table .comission-table--title{
     margin-bottom: 15px;
@@ -180,7 +191,7 @@ main{
     font-weight: bold;
     line-height: 2.3rem;
     color: var(--secondary-blue);
-    text-align: left;
+    text-align: center;
 }
 .currency-table--container, .comission-table--container{
     width: 90%;
@@ -188,9 +199,10 @@ main{
     max-width: 300px;
     height: 250px;
     margin: 0 auto; 
-    background-color: var(--soft-white);
-    box-shadow: 10px 20px 25px rgba(19, 8, 8, 0.377);
+    background-color: var(--just-white);
+    box-shadow: 10px 20px 25px 5px rgba(19, 8, 8, 0.377);
     border-radius: 12px;
+    
 }
 .currency-table--container table, .comission-table--container table{
     width: 100%;
@@ -202,7 +214,7 @@ main{
     font-weight: 500;
     line-height: 1.9rem;
     color: var(--grey);
-    background-color: var(--soft-white);
+    background-color: var(--just-white);
 }
 
 .currency-table--container .table__rigth, .comission-table--container .table__rigth{
@@ -393,14 +405,24 @@ main{
     color: #757575;
     padding-top: 30px;
 }
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 20px;
+    
+}
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 65%;
     min-width: 230px;
     max-width: 300px;
     height: 250px; 
     /* auto hace que el contenedor su altura sea correspondiente al tamano que ocupe su contenido*/
-    margin: 50px auto 0;
+    margin: 50px 15px 0;
     padding: 0 15px;
     margin-top: 30px;
     border-radius: 15px;
@@ -408,17 +430,31 @@ main{
     background-color: var(--just-white);
     margin-bottom: 10px;
 }
+.plans-container--slider::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+.plans-container--slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+.fondo2{
+    background-color: rgb(151, 201, 248);
+}
+.fondo3{
+    background-color: rgb(61, 59, 59);
+}
 .recomendado{
     position: absolute;
     width: 120px;
     height: 31px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
     left: calc(50% - 60px);
     top: -15px;
     color: var(--just-white);
     padding: 6px;
+    font-weight: bold;
 }
 .plans-container--div h3{
     padding-top: 30px;
@@ -462,3 +498,54 @@ main{
     display: inline-block;
     vertical-align: text-bottom;
 }
+.tarjeta2{
+    background-color: #1197f7;
+}
+.tarjeta3{
+    background-color: rgb(41, 39, 29);
+}
+.tarjetita2 .plan-card--button{
+    border: 2px #1197f7 solid;
+}
+.tarjetita2 .plan-card--saving{
+    color: var(--warm-black)
+}
+.tarjetita3 .plan-class-price{
+    color: var(--just-white);
+}
+.tarjetita3 h3{
+    color: gold;
+}
+
+.tarjetita3 .plan-card--saving{
+    color: gold;
+}
+.tarjetita3 .plan-card--button{
+    border: 2px var(--warm-black) solid;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+

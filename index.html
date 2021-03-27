@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MobileFirstCurso</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet-desktop.css" media="(min-width: 1024px)">
     <link href=“https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap” rel=“stylesheet”>
+    
 </head>
 <body>
     <header>
@@ -26,8 +28,8 @@
                 <h2>Visibilizamos todas las tasas de cambio.</h2>
                 <p>Traemos informacion en tiempo real de las casas de cambio y las monedas mas importantes del mundo</p>
             </div>
-            <section class="main-tables-container">
-                <div class="main-currency-table">
+            <section class="main-tables--slider">
+                <article class="main-currency-table">
                     <p class="currency-table--title">Monedas</p>
                     <div class="currency-table--container">
                         <table>
@@ -53,10 +55,10 @@
                             <p><b>Actualizado:</b> 22 Marzo 17:10</p>
                             <!-- la etiqueta b nos permite modificar el texto a bold -->
                         </div>
-                     </div>
+                    </article>
                         <!-- Nueva tabla -->
 
-                        <div class="main-comission-table">
+                        <article class="main-comission-table">
                             <p class="comission-table--title">Comisiones</p>
                             <div class="comission-table--container">
                                 <table>
@@ -82,7 +84,7 @@
                                     <p><b>Actualizado:</b> 22 Marzo 18:52</p>
                                     <!-- la etiqueta b nos permite modificar el texto a bold -->
                                 </div>
-                </div>
+                        </article>
             </section>
         </section>
         <section class="main-section2">
@@ -126,12 +128,30 @@
                 <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
             <section class="plans-container--slider">
-                <article class="plans-container--card">
-                    <p class="recomendado">Recomendado</p>
+                <article class="plans-container--card fondo1">
+                    <p class="recomendado tarjeta1">Recomendado</p>
                     <div class="plans-container--div">
                         <h3>Pago Anual</h3>
                         <p class="plan-class-price"><span>$</span> 99</p>
                         <p class="plan-card--saving">* Ahorras $129 comprando el plan mensual.</p>
+                        <button class="plan-card--button">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card fondo2">
+                    <p class="recomendado tarjeta2">Basico</p>
+                    <div class="plans-container--div tarjetita2">
+                        <h3>Pago mensual</h3>
+                        <p class="plan-class-price"><span>$</span> 19</p>
+                        <p class="plan-card--saving">* Plan basico, aunque con todas las ventajas</p>
+                        <button class="plan-card--button">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card fondo3">
+                    <p class="recomendado tarjeta3">Ilimitado</p>
+                    <div class="plans-container--div tarjetita3">
+                        <h3>De por vida</h3>
+                        <p class="plan-class-price"><span>$</span> 199</p>
+                        <p class="plan-card--saving">* Exclusivo para los 100 primeros clientes a un precio especial</p>
                         <button class="plan-card--button">Escoger este <span></span></button>
                     </div>
                 </article>
@@ -140,7 +160,16 @@
         
     </main>
     <footer>
-        
+        <section class="left">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <img src="./assets/img/logo-footer.svg" alt="Logo de batatabit">
+        </section>
     </footer>
 </body>
 </html>
